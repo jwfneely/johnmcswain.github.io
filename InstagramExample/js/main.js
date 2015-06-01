@@ -14,8 +14,10 @@ $('#searchButton').click(function(){
         success: function(response) {
             //console.log(response);
             $.each(response.data,function(index,value){
-                $('#resultDiv').append('<div><img src=\''+value.images.low_resolution.url+'\'>').addClass('border left');     
+                $('#resultDiv').append('<div class="results"><img src=\''+value.images.low_resolution.url+'\'></div>');
             });
+            
+            $('.results').addClass('border left');
         }
     });
 })
