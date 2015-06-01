@@ -14,4 +14,4 @@ function GetURLParameter(sParam)
 
 }
 
-alert(GetURLParameter('access_token'));
+alert(GetURLParameter('#access_token'));
