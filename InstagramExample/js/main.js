@@ -34,8 +34,6 @@ function instagramRESTCall(){
             $('.results').addClass('border left');
             $('.results > video').addClass('center');
             $('.results > img').addClass('center');
-            //$('.results > video').addClass('center');
-            //$('.results video').addClass('mejs-mediaelement');
         }
     });
     
