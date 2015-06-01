@@ -16,9 +16,9 @@ $('#searchButton').click(function(){
             //console.log(response);
             $.each(response.data,function(index,value){
                 if(value.type == "image"){
-                    $('#resultDiv').append('<div class=\'results\'><img style=\'max-width:80%;max-height:80%\' src=\''+value.images.low_resolution.url+'\'></div>');
+                    $('#resultDiv').append('<div class=\'results\'><img src=\''+value.images.low_resolution.url+'\'></div>');
                 }else{
-                    $('#resultDiv').append('<div class=\'results\'><video style=\'max-width:80%;max-height:80%\' controls><source src=\''+value.images.low_resolution.url+'\' type=\'video/mp4\'></div>');
+                    $('#resultDiv').append('<div class=\'results\'><video style=\'max-width:90%;max-height:90%\' controls><source src=\''+value.images.low_resolution.url+'\' type=\'video/mp4\'></div>');
 
                 }
             });
