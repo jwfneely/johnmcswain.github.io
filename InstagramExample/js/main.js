@@ -6,7 +6,7 @@ var access_token;
 
 
 $('#searchButton').click(function(){
-    $('#resultDiv').html = ""; //clear the div
+    $('#resultDiv').html(""); //clear the div
     $.ajax({
         type: "GET",
         dataType: "jsonp",
