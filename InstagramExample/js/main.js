@@ -9,7 +9,7 @@ var access_token;
 
 $('#searchButton').click(function(){
   $.ajax({
-  url: 'https://api.instagram.com/v1/tags/search?q='+$('#searchText').val()+'&access_token='+access_token
+  url: 'https://api.instagram.com/v1/tags/'+$('#searchText').val()+'/media/recent?access_token='+access_token
 })
   .done(function(response) {
     console.log(response);
