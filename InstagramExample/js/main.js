@@ -23,8 +23,8 @@ $('#searchButton').click(function(){
                 }
             });
             
-            $('.results').addClass('border left center');
-            //$('results > img,video').addClass('');
+            $('.results').addClass('border left');
+            $('results > img,video').addClass('center');
             //$('.results video').addClass('mejs-mediaelement');
         }
     });
