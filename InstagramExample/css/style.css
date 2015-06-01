@@ -1,4 +1,4 @@
-div{float:left;}
+div{float:left; margin-left: auto; margin-right: auto; vertical-align: middle;}
 
 p,input,button{display: inline;}
 
