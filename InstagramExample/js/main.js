@@ -1,4 +1,17 @@
-//https://api.instagram.com/v1/tags/nofilter/media/recent?client_id=e18b246fb6874ee3a337820c756652c4
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
 
+    }
 
-window.location = "https://instagram.com/oauth/authorize/?client_id=e18b246fb6874ee3a337820c756652c4&redirect_uri=http://johnmcswain.github.io/InstagramExample/&response_type=token";
+}
+
+alert(GetURLParameter('access_token'));
