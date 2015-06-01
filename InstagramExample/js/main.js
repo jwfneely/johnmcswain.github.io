@@ -18,7 +18,7 @@ $('#searchButton').click(function(){
                 if(value.type == "image"){
                     $('#resultDiv').append('<div class=\'results\'><img src=\''+value.images.low_resolution.url+'\'></div>');
                 }else{
-                    $('#resultDiv').append('<div class=\'results\'><video style=\'max-width:90%;max-height:90%\' controls><source src=\''+value.images.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
+                    $('#resultDiv').append('<div class=\'results\'><video style=\'max-width:90%;max-height:90%\' controls><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
 
                 }
             });
