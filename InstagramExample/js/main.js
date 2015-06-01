@@ -17,10 +17,11 @@ $('#searchButton').click(function(){
 
 function instagramRESTCall(){
     $('#resultDiv').html(""); //clear the div
+    var path = isPopular?'https://api.instagram.com/v1/media/popular?access_token='+access_token:'https://api.instagram.com/v1/tags/'+$('#searchText').val()+'/media/recent?access_token='+access_token;
     $.ajax({
         type: "GET",
         dataType: "jsonp",
-        url: isPopular ?'https://api.instagram.com/v1/media/popular?access_token='+access_token:'https://api.instagram.com/v1/tags/'+$('#searchText').val()+'/media/recent?access_token='+access_token,
+        url: path,
         success: function(response) {
             $.each(response.data,function(index,value){
                 if(value.type == "image"){
