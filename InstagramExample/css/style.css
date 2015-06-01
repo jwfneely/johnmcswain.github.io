@@ -1,12 +1,13 @@
-#resultsDiv div{
- width: 400px;
-    height: 400px;
-    
-    
-}
+p,input,button{display: inline;}
 
-.border {
-    border: 1px solid #ccc;
-}
+.border {border: 1px solid #ccc;}
 
 .left{float:left;}
+
+#resultsDiv {width: 100%;}
+
+#resultsDiv div{
+ width: 400px;
+ height: 400px;
+}
+
