@@ -1,0 +1,12 @@
+#resultsDiv div{
+ width: 400px;
+    height: 400px;
+    
+    
+}
+
+.border {
+    border: 1px solid #ccc;
+}
+
+.left{float:left;}
