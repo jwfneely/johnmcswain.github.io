@@ -1,4 +1,4 @@
-div{float:left; margin-left: auto; margin-right: auto; vertical-align: middle;}
+div{float:left;}
 
 p,input,button{display: inline;}
 
@@ -6,10 +6,13 @@ p,input,button{display: inline;}
 
 .left{float:left;}
 
+.center{ margin-left: auto; margin-right: auto; vertical-align: middle;}
+
 #resultDiv {width: 100%;}
 
 #resultDiv div{
  width: 300px;
  height: 300px;
 }
+
 
