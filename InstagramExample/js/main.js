@@ -10,7 +10,7 @@ $('#searchButton').click(function(){
     $.ajax({
         type: "GET",
         dataType: "jsonp",
-        url: 'https://api.instagram.com/v1/tags/'+$('#searchText').val()+'/media/recent?access_token='+access_token, 
+        url: 'https://api.instagram.com/v1/tags/'+$('#searchText').val()+'/media/recent?access_token='+access_token+'&COUNT=1000', 
         success: function(response) {
             //console.log(response);
             $.each(response.data,function(index,value){
