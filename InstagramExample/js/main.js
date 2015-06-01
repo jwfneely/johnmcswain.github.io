@@ -1,1 +1,1 @@
-alert(window.location.hash;);
+alert(window.location.hash);
