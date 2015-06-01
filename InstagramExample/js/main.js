@@ -24,6 +24,7 @@ $('#searchButton').click(function(){
             });
             
             $('.results').addClass('border left');
+            $('.results > video').addClass('mejs-player');
         }
     });
 })
