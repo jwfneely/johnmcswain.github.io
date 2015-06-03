@@ -3,6 +3,8 @@ var isPopular = false;
 (function (){
     access_token = window.location.hash.split('=')[1];
     //alert(access_token);
+                    $('.materialboxed').materialbox();
+
 
 })();
 
@@ -35,7 +37,6 @@ function instagramRESTCall(){
             $('.results').addClass('left card large');
             $('.results > video').addClass('card-image materialboxed ');
             $('.results > img').addClass('card-image materialboxed');
-                $('.materialboxed').materialbox();
         }
     });
     
