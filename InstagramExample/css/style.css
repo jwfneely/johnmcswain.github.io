@@ -11,8 +11,6 @@ p,input,button{display: inline;}
 #resultDiv {width: 100%;}
 
 #resultDiv div{
- width: 400px;
- height: 400px;
  display: table-cell;text-align: center; vertical-align: middle;
 }
 
