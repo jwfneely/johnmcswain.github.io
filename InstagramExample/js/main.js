@@ -3,6 +3,7 @@ var isPopular = false;
 (function (){
     access_token = window.location.hash.split('=')[1];
     //alert(access_token);
+    $('.materialboxed').materialbox();
 })();
 
 $('#popularButton').click(function(){
@@ -31,9 +32,9 @@ function instagramRESTCall(){
                 }
             });
             
-            $('.results').addClass('left card small');
-            $('.results > video').addClass('card-image');
-            $('.results > img').addClass('card-image');
+            $('.results').addClass('left card medium');
+            $('.results > video').addClass('card-image materialboxed ');
+            $('.results > img').addClass('card-image materialboxed');
         }
     });
     
