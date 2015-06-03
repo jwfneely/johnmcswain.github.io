@@ -29,7 +29,7 @@ function instagramRESTCall(){
                 if(value.type == "image"){
                     $('#resultDiv').append('<div class=\'results card medium\'><img width=\''+value.images.low_resolution.width+'\' src=\''+value.images.low_resolution.url+'\' class=\'card-image materialboxed\'></div>');
                 }else{
-                    $('#resultDiv').append('<div class=\'results card medium\'><video controls width=\''+value.images.low_resolution.width+'\ class=\'card-image materialboxed\'><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
+                    $('#resultDiv').append('<div class=\'results card medium\'><video controls width=\''+value.images.low_resolution.width+'\ class=\'card-image\'><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
                 }
             });
             
