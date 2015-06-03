@@ -1,14 +1,7 @@
 
-p,input,button{display: inline;}
-
-.border {border: 1px solid #ccc;}
 
 .left{float:left;}
 
-.center{ display: inline-block;}
 
-#resultDiv div{
- display: table-cell;text-align: center; vertical-align: middle;
-}
-.nav-wrapper,button{background-color: #517fa4;}
+.instagram-blue {background-color: #517fa4;}
 
