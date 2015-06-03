@@ -31,9 +31,9 @@ function instagramRESTCall(){
                 }
             });
             
-            $('.results').addClass('border left card medium');
-            $('.results > video').addClass('center card-image');
-            $('.results > img').addClass('center card-image');
+            $('.results').addClass('left card medium');
+            $('.results > video').addClass('card-image');
+            $('.results > img').addClass('card-image');
         }
     });
     
