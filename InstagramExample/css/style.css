@@ -10,5 +10,5 @@ p,input,button{display: inline;}
 #resultDiv div{
  display: table-cell;text-align: center; vertical-align: middle;
 }
-
+.nav-wrapper,button{background-color: #517fa4;}
 
