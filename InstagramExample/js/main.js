@@ -26,9 +26,9 @@ function instagramRESTCall(){
         success: function(response) {
             $.each(response.data,function(index,value){
                 if(value.type == "image"){
-                    $('#resultDiv').append('<div class=\'results\'><img src=\''+value.images.low_resolution.url+'\'></div>');
+                    $('#resultDiv').append('<div class=\'results\'><img width=\''+value.images.low_resolution.width+'\' src=\''+value.images.low_resolution.url+'\'></div>');
                 }else{
-                    $('#resultDiv').append('<div class=\'results\'><video controls><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
+                    $('#resultDiv').append('<div class=\'results\'><video controls width=\''+value.images.low_resolution.width+'\'><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
                 }
             });
             
