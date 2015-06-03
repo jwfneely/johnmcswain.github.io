@@ -34,7 +34,7 @@ function instagramRESTCall(){
             });
             
             $('.results').addClass('left');
-           // $('.materialboxed').materialbox();
+            $('.materialboxed').materialbox();
 
         }
     });
