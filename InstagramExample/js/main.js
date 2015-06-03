@@ -32,7 +32,7 @@ function instagramRESTCall(){
                 }
             });
             
-            $('.results').addClass('left card medium');
+            $('.results').addClass('left card large');
             $('.results > video').addClass('card-image materialboxed ');
             $('.results > img').addClass('card-image materialboxed');
                 $('.materialboxed').materialbox();
