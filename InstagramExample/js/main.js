@@ -27,14 +27,14 @@ function instagramRESTCall(){
         success: function(response) {
             $.each(response.data,function(index,value){
                 if(value.type == "image"){
-                    $('#resultDiv').append('<div class=\'results\'><img width=\''+value.images.low_resolution.width+'\' src=\''+value.images.low_resolution.url+'\' class=\'card-image materialboxed\'></div>');
+                    $('#resultDiv').append('<div class=\'results card large\'><img width=\''+value.images.low_resolution.width+'\' src=\''+value.images.low_resolution.url+'\' class=\'card-image materialboxed\'></div>');
                 }else{
-                    $('#resultDiv').append('<div class=\'results\'><video controls width=\''+value.images.low_resolution.width+'\ class=\'card-image materialboxed\'><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
+                    $('#resultDiv').append('<div class=\'results card large\'><video controls width=\''+value.images.low_resolution.width+'\ class=\'card-image materialboxed\'><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
                 }
             });
             
-            $('.results').addClass('left card large');
-            $('.results > video').addClass('');
+            $('.results').addClass('left');
+           // $('.results > video').addClass('');
            // $('.results > img').addClass('card-image materialboxed');
                                 $('.materialboxed').materialbox();
 
