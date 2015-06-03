@@ -3,7 +3,6 @@ var isPopular = false;
 (function (){
     access_token = window.location.hash.split('=')[1];
     //alert(access_token);
-                    $('.materialboxed').materialbox();
 
 
 })();
@@ -30,13 +29,15 @@ function instagramRESTCall(){
                 if(value.type == "image"){
                     $('#resultDiv').append('<div class=\'results\'><img width=\''+value.images.low_resolution.width+'\' src=\''+value.images.low_resolution.url+'\' class=\'card-image materialboxed\'></div>');
                 }else{
-                    $('#resultDiv').append('<div class=\'results\'><video controls width=\''+value.images.low_resolution.width+'\'><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
+                    $('#resultDiv').append('<div class=\'results\'><video controls width=\''+value.images.low_resolution.width+'\ class=\'card-image materialboxed\'><source src=\''+value.videos.low_resolution.url+'\' type=\'video/mp4\'></video></div>');
                 }
             });
             
             $('.results').addClass('left card large');
-            $('.results > video').addClass('card-image materialboxed');
+            $('.results > video').addClass('');
            // $('.results > img').addClass('card-image materialboxed');
+                                $('.materialboxed').materialbox();
+
         }
     });
     
