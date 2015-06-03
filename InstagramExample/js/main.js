@@ -34,9 +34,7 @@ function instagramRESTCall(){
             });
             
             $('.results').addClass('left');
-           // $('.results > video').addClass('');
-           // $('.results > img').addClass('card-image materialboxed');
-                                $('.materialboxed').materialbox();
+            $('.materialboxed').materialbox();
 
         }
     });
