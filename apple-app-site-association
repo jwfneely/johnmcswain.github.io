@@ -1,11 +1,8 @@
 {
     "applinks": {
         "apps": [],
-        "details": [
-            {
-                "appID": "YLPH267KV8.com.johnmcswain.universalapp",
-                "paths": [ "/universalapp/*" ]
-            }
-        ]
+        "details":
+            "YLPH267KV8.com.johnmcswain.universalapp":{
+                "paths": [ "/universalapp/*" ]}
     }
 }
